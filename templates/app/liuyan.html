@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset= "utf-8">
+<title>在线留言</title>
+<link href= "static/css/style.css"  rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+	<div class="banner">
+		<img src="static/images/ban.jpg">
+	</div>
+	<div class="menu">
+		<ul>
+		<li><a href="{% url 'index' %}" >网站首页</a></li>
+		<li><a href="{% url 'zhishi' %}"  >相关知识</a></li>
+		<li><a href="{% url 'liyong' %}">废物利用</a></li>
+		<li><a href="{% url 'chanpin' %}">相关产品</a></li>
+		<li><a href="{% url 'xinwen' %}" >新闻中心</a></li>
+		<li class = "xuan"></li><li><a href="{% url 'liuyan' %}">在线留言</a></li>
+		<li><a href="{% url 'women' %}"  >关于我们</a></li>
+		<li><a href="{% url 'upload' %}" >在线识别</a></li>
+		</ul>
+	</div>	
+	<div class="title"><i></i>在线留言</div>
+	<div class="text">
+		<form>
+				<label><span><input id="name" type="text" name="name" placeholder="您的姓名" /> </span></label>
+				<label><span><input id="name" type="text" name="name" placeholder="联系电话" /> </span></label>
+				<label><span><textarea id="message" name="message" placeholder="留言内容"></textarea> </span></label> 
+				<label><span><input type="button" class="button" value="立即提交" /></span> </label>
+		</form> 
+	</div>
+</div>
+</body>
+</html>

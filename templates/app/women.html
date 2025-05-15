@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset= "utf-8">
+<title>废物利用</title>
+<link href= "static/css/style.css"  rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+	<div class="banner">
+		<img src="static/images/ban.jpg">
+	</div>
+	<div class="menu">
+		<ul>
+		<li><a href="{% url 'index' %}" >网站首页</a></li>
+		<li><a href="{% url 'zhishi' %}"  >相关知识</a></li>
+		<li><a href="{% url 'liyong' %}">废物利用</a></li>
+		<li><a href="{% url 'chanpin' %}">相关产品</a></li>
+		<li><a href="{% url 'xinwen' %}" >新闻中心</a></li>
+		<li><a href="{% url 'liuyan' %}">在线留言</a></li>
+		<li class = "xuan"></li><li><a href="{% url 'women' %}"  >关于我们</a></li>
+		<li><a href="{% url 'upload' %}" >在线识别</a></li>
+		</ul>
+	</div>	
+	<div class="title"><i></i>团队介绍</div>
+	<div class="text">
+		<table cellspacing="0" border="1px">
+		  <tr>
+			<th width="300">姓名</th>
+			<th width="150">学历</th>
+			<th height="80">个人简介及特长</th>
+		  </tr>
+		  <tr>
+			<th height="300"><img src="static/images/w1.png" width="200"><br>唐文麒</th>
+			<th>硕士</th>
+			<th style="padding:0 50px;">现就读于华中农业大学植物营养学专业，希望对机器学习有更深的了解。为人乐观开朗，进取向上，勤奋努力，有团队合作精神，有职责心有耐心够细心。在本次项目中主要负责神经网络核心算法的实现和方案策划工作。</th>
+		  </tr>
+		  <tr>
+			<th height="300"><img src="static/images/w2.png" width="200"><br>王子涵</th>
+			<th>硕士</th>
+			<th style="padding:0 50px;">现就读于华中农业大学植物营养学专业，善于交际，拥有一定的人脉关系，积极主动，尽职尽责，勇于挑战自己，认可互联网发展、在本项目中负责策划书撰写工作。</th>
+		  </tr>
+		  <tr>
+			<th height="300"><img src="static/images/w3.png" width="200"><br>毛燎</th>
+			<th>硕士</th>
+			<th style="padding:0 50px;">现就读于华中农业大学资源利用与植物保护专业，注重理论联系实际，有较强的自学能力以及分析、解决问题的能力。</th>
+		  </tr>
+		  <tr>
+			<th height="300"><img src="static/images/w4.png" width="200"><br>李远</th>
+			<th>硕士</th>
+			<th style="padding:0 50px;">现就读于华中农业大学资源利用与植物保护专业，主要负责该APP的后端开发，主要涉及Django开发。</th>
+		  </tr>
+		  <tr>
+			<th height="300"><img src="static/images/w5.png" width="200"><br>陈羽萱</th>
+			<th>硕士</th>
+			<th style="padding:0 50px;">现就读于华中农业大学资源利用与植物保护专业，对互联网产业的发展很有兴趣，在学习知识的同时也希望能够将理论知识运用于实际生活中，在本次项目中主要负责手机和电脑端的网页设计。</th>
+		  </tr>
+		  {% comment %} <tr>
+			<th height="300"><img src="static/images/w6.png" width="200"><br>向倩汶</th>
+			<th>本科</th>
+			<th style="padding:0 50px;">现就读于成都理工大学计算机与网络安全学院（牛津布鲁克斯学院）智能科学与技术专业，具有较强的活动企划能力，善于交际，积极乐观，尽职尽责，是本项目APP开发者之一。</th>
+		  </tr><tr>
+			<th height="300"><img src="static/images/w7.png" width="200"><br>张偲杰</th>
+			<th>本科</th>
+			<th style="padding:0 50px;">现就读于成都理工大学计算机与网络安全学院（牛津布鲁克斯学院）智能科学与技术专业，在技术方面主要负责该app的后端开发，主要涉及图像的接收，储存。</th>
+		  </tr><tr>
+			<th height="300"><img src="static/images/w8.png" width="200"><br>张天溢</th>
+			<th>本科</th>
+			<th style="padding:0 50px;">现就读于成都理工大学成都理工大学计算机与网络安全学院（牛津布鲁克斯学院）智能科学与技术专业，富有责任感，敢于面对挑战，有强烈的进取心和优秀的团队精神，善于与他人协同作战。</th>
+		  </tr> {% endcomment %}
+		  
+		</table>	
+	</div>
+	<div class="title"><i></i>服务理念</div>
+	<div class="text">
+		<p>
+		我们秉持绿色环保的理念，利用人工智能视觉识别为核心的技术方法，以应用app、网页端、小程序的便利方式，提供垃圾自动识别、智能回收以及再生产品智能选购服务，从而简化垃圾分类，推广垃圾分类知识，节省垃圾分类的人力成本，实现有用垃圾的回收利用，从根源上解决当今社会垃圾分类难以实践的问题，助力建设资源节约型、环境友好型社会。
+		</p>	
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="foot">
+     <p>世界上本没有垃圾，只有放错位置的财富</p>
+</div>
+</body>
+</html>

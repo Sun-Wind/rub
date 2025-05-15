@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset= "utf-8">
+<title>新闻中心</title>
+<link href= "static/css/style.css"  rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+	<div class="banner">
+		<img src="static/images/ban.jpg">
+	</div>
+	<div class="menu">
+		<ul>
+		<li><a href="{% url 'index' %}" >网站首页</a></li>
+		<li><a href="{% url 'zhishi' %}"  >相关知识</a></li>
+		<li><a href="{% url 'liyong' %}">废物利用</a></li>
+		<li><a href="{% url 'chanpin' %}">相关产品</a></li>
+		<li class = "xuan"></li><li><a href="{% url 'xinwen' %}" >新闻中心</a></li>
+		<li><a href="{% url 'liuyan' %}">在线留言</a></li>
+		<li><a href="{% url 'women' %}"  >关于我们</a></li>
+		<li><a href="{% url 'upload' %}" >在线识别</a></li>
+		</ul>
+	</div>	
+	<div class="title"><i></i>新闻中心</div>
+	<div class="list">
+		<ul >
+            <li><a href="{% url 'newsa' %}"  ><img src="static/images/newsa.jpg" /><p>垃圾分类成为新时尚，让绿色环保理念深入人心</p></a></li>
+            <li><a href="{% url 'newsb' %}"  ><img src="static/images/newsb.jpg" /><p>垃圾分类，从我做起，社区生态建设共出一份力</p></a></li>
+            <li><a href="{% url 'newsc' %}"  ><img src="static/images/newsc.jpg" /><p>贵阳垃圾分类活动：绿色发展高质量 生态文明出新绩</p></a></li>
+            <li style="margin-right:0px;"><a href="{% url 'newsd' %}"  ><img src="static/images/newsd.jpg" /><p>多措并举助力垃圾分类让垃圾分类理念深入人心</p></a></li>
+            </ul>
+	</div>	
+	<div class="clear"></div>
+</div>
+<div class="foot">
+     <p>世界上本没有垃圾，只有放错位置的财富</p>
+</div>
+</body>
+</html>

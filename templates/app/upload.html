@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>上传</title>
+<style type="text/css">
+body {
+  font-family: "Microsoft YaHei";
+  background-image: url(static/images/bga.jpg);
+  background-size: 100%;
+}
+.text{
+	width:500px;
+	margin: 0 auto;
+}
+.input{
+  background-color:red
+}
+.text form{
+  margin:130px 0;
+  padding:20px 50px;
+  box-shadow: 1px 1px 6px #000;
+  font-size:18px;}
+.text form span{color:#fff; line-height:70px;}
+.text label { margin-bottom:30px;} 
+.text label span { color: #5E5E5E;} 
+.bianhao input{height:50px;width:100%; padding: 0px 0px 0px 10px; border: 1px solid #E5E5E5; background: #FBFBFB;margin-bottom:30px;} 
+.file-box{margin-bottom:30px;font-size:14px;display: inline-block;position: relative;padding:10px 20px;overflow: hidden;color:#fff;background-color:#4e874d;}
+.file-btn{position: absolute;width: 100%;height: 100%;top: 0;left: 0;outline: none;background-color: transparent;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0;opacity: 0;}
+</style>
+</head>
+<body>
+<div class="up">	
+	<div class="text">
+		<form action = "{% url  'upload1' %}"  method = "post"  enctype="multipart/form-data">
+            {% csrf_token %}
+				<span>垃圾分类系统——图片上传识别<br></span>
+				<label class="bianhao"><span><input id="bianhao" type="text" name="name" placeholder="图片序号" /> </span></label>
+				<div class="file-box"><input type="file" class="file-btn" name = "pic" />上传图片识别</div>
+                <p style = "text-align: center;"><input type = "submit" class = "input" value = "上传"/></p>
+		</form> 
+	</div>
+</div>
+</body>
+</html>
